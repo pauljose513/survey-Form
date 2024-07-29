@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+        <section>
+            <form id="survey-form" method="post" action="">
+                <fieldset>
+                    <label id="name-label" for="name" >Name<input type="text" id="name" required
+                            placeholder="Enter your name" /></label>
+                    <label id="email-label" for="email">Email<input type="email" id="email" required
+                            placeholder="Enter your Email" /></label>
+                    <label id="number-label" for="number">Age(Optional)<input type="number" id="number" min="13" max="120" placeholder="Age" /></label>
+                    <label id="dropdown-label" for="dropdown">Which option best describes your current role?
+                        <select id="dropdown">
+                            <option value="0">Select one</option>
+                            <option value="1">Jobless</option>
+                            <option value="2">Student</option>
+                            <option value="3">Working</option>
+                        </select>
+                    </label>
+                </fieldset> 
+                <fieldset >
+                    <label>Would you recommend freeCodeCamp to a friend?</label>
+                    <label for="sure-recomendation"><input type="radio" id="sure-recomendation" value="Sure" name="recommend" checked class="in-line"/>Sure</label>
+                    <label for="unsure-recomendation"><input type="radio" id="unsure-recomendation" value="Not-sure" name="recommend" class="in-line"/>Not sure</label>
+                    <label>What would you like to see improved? (Check all that apply)</label>
+                    <label for="Front-end"><input type="checkbox" id="Front-end" value="Front-end" class="in-line"/>Front end</label>
+                    <label for="Back-end"><input type="checkbox" id="Back-end" value="Back-end" class="in-line"/>Back end</label>
+                    <label for="Networking"><input type="checkbox" id="Networking" value="Networking" class="in-line"/>Networking</label>
+                    <label for="Cloud"><input type="checkbox" id="Cloud" value="Cloud" class="in-line"/>Cloud</label>
+                    <label for="DevSecOps"><input type="checkbox" id="DevSecOps" value="DevSecOps" class="in-line"/>DevSecOps</label>
+                    <label for="Programming"><input type="checkbox" id="Programming" value="Programming" class="in-line"/>Programming</label>
+                </fieldset>
+                <fieldset>
+                    <label for="suggestions">Any comments or suggestions?<textarea rows="10" id="suggestions"></textarea></label>
+                    <label for="submit"><input id="submit" type="submit" value="Submit"></label>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
